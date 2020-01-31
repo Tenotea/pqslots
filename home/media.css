@@ -29,7 +29,9 @@
         position: absolute;
         right: 0;
         flex-direction: column;
+        justify-content: space-evenly;
         height: 90vh;
+        padding: 70px;
         top: 8vh;
         width: 70%;
         transform: translateX(100%);
@@ -39,7 +41,7 @@
     .nav-links li{
         opacity: 0;
         transform: translateX(50px);
-        border-bottom: 2px solid #78df4f;
+        border-bottom: 2px solid #000000;
        padding: 3px 2px;
 
     }
@@ -47,7 +49,6 @@
     .burger{
         display: block;
         cursor: pointer;
-        box-shadow: 4px, 3px, 1px, rgba(0, 0, 0, 0.5);
     }
 
 

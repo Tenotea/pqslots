@@ -21,13 +21,13 @@
     width: 100vw;
     height: 100vh;
     position: absolute;
-    background-color:  #ffe23e;
+    background-color:  #08ff67;
     transition: .4s transform ease-in-out;
     z-index: 5;
 }
 
 .big-loading{
-    color: #154025;
+    color: #ffffff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -55,7 +55,7 @@
 .loading{
     width: 30px;
     height: 30px;
-    background-color: #17e566;
+    background-color: #087c35;
     border-radius: 50%;
 }
 
@@ -118,7 +118,9 @@
     position: fixed;
     z-index: 1;
     width: 100%;
-    background: #ffe23e;
+    background: #08ff67;
+    transform: translateY(-10vh);
+    transition: .4s transform ease-in-out;
 }
 
 .site-name{
@@ -133,7 +135,7 @@
     width: 40%;
     font-family: 'poppins', sans-serif;
     text-transform: uppercase;
-    background: #ffe23e; 
+    background: #08ff67; 
 }
 
 .nav-links li{
@@ -145,7 +147,7 @@
 }
 
 .nav-links li:hover{
-    border-bottom: 2px solid #78df4f;
+    border-bottom: 2px solid #000000;
 }
 
 .burger{
@@ -200,8 +202,9 @@
     position: relative;
     background: url("../res/img.jpg") no-repeat;
     background-size: cover;
-    background-color: #154025;
-    background-blend-mode: soft-light;
+    background-color: #2f3330;
+    /* background-blend-mode: soft-light; */
+    background-blend-mode: multiply;
 }
 
 /* .intro-page::after{
@@ -218,7 +221,7 @@
 
 .a {
     fill: none;
-    stroke: #39cf25;
+    stroke: #08ff67;
     stroke-width: 5px;
 }
 
@@ -305,7 +308,7 @@
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    background: linear-gradient(45deg, #07ff45,#eaf216);
+    background: #08ff67;
 }
 
 @keyframes full{

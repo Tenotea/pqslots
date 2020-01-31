@@ -21,10 +21,13 @@ let loadingEffect = () => {
      enterText2.addEventListener("webkitAnimationEnd", () => {
         body.style.overflow = "unset";
         finishLine.style.cssText = "animation: full 1s 1 ease 0s forwards;"});
-
+       
+        finishLine.addEventListener("webkitAnimationEnd", () => {
+          header.style.cssText = "transform: translateY(0vh);";
+        });
     } 
-//setTimeout(loadingEffect, 5000);
-window.addEventListener('load', loadingEffect);
+setTimeout(loadingEffect, 5000);
+//window.addEventListener('load', loadingEffect);
 
 
 ///...........THE SVG PRECAUTION.........//
