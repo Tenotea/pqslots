@@ -1,50 +1,7 @@
 @media screen and (max-width:1024px){
-    .big-loading{
-        font-size: 40px;
-   } 
-
-    .loading{
-        width: 25px;
-        height: 25px;
-    }
-
-    .site-name{
-        font-size: 50px;
-        padding-left: 40px;
-    }
-
-    .nav-options{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        font-family: 'Carter One', cursive;
-        font-size: 13px;
-        color: black;
-        background: #feffc4;
-        position: absolute;
+    /*//.........NAVIGATION STYLING......// */
+    .nav-links{
         width: 50%;
-        height: 80vh;
-        transform: translate(100vw, 47vh);
-        transform-origin: top;
-        z-index: 10;
-    }
-
-    .android-menu{
-        width: fit-content;
-        height: fit-content;
-        transform: translate(77vw,-96vh);
-        position: fixed;
-    }
-
-    .navigation{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: fit-content;
-        height: fit-content;
-        align-items: center;
-        padding-left: 20px;
     }
 }
 
@@ -61,50 +18,47 @@
 
 
 
-
-
-
-
-@media screen and (max-width:560px) {
-
-    .under-logo{
+@media screen and (max-width:768px) {
+    .nav-links{
+        position: absolute;
+        right: 0;
         flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        height: 92vh;
+        top: 8vh;
+        width: 70%;
+        background: #ffffff;
+        transform: translateX(100%);
+        transition: .6s transform ease-in-out;
     }
 
-    .t1, .t2{
-        transform: translateX(0px);
+    .nav-links li{
+        opacity: 0;
+        transform: translateX(50px);
     }
 
-    @keyframes text-enter01{
-        from{
-            transform: translateX(-250px);
-            opacity: 0;
-        } to{
+    .burger{
+        display: block;
+    }
+
+
+
+    /* //......THESE_ARE_CALLED_BY_JAVASCRIPT........// */
+
+    .nav-links-active{
+        transform: translateX(0%);
+        transition: .6s transform ease-in-out;
+    }
+
+    @keyframes linksUp {
+       100% {
+           opacity: 1;
             transform: translateX(0px);
-            opacity: 1;
-        }
-    }
-    
-    @keyframes text-enter02{
-        from{
-            transform: translateY(40px);
-            opacity: 0;
-        } to{
-            transform: translateY(0px);
-            opacity: 1;
         }
     }
 
-    .finish-line{
-        width: 80%;
-        height: 5px;
-    }
-
-    .site-name{
-        font-size: 40px;
-        padding-left: 20px;
-    }
     
+
+
+
+
 }
