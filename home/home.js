@@ -75,3 +75,8 @@ finishLine.addEventListener("webkitAnimationEnd" , () => {
 
 //..........ANDROID_NAV_SLIDE_IN..........//
 
+const androidMenu = document.querySelector('.android-menu');
+
+androidMenu.addEventListener('click', () => {
+    navOptions.style.cssText = "transform: translate(50vw, 47vh); transition: .6s transform ease-in-out;";
+})
