@@ -11,29 +11,23 @@
 ::-webkit-scrollbar{
     display: none;
 }
-body{
-    transition-property: transform;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-    overflow: unset;
-}
-
-.body-active{
+.body{
     overflow: hidden;
 }
+
 
 /* //.............PAGE LOADER SYLING.............// */
 .first-loading-page{
     width: 100vw;
     height: 100vh;
     position: absolute;
-    background-color: #154025;
+    background-color:  #ffe23e;
     transition: .4s transform ease-in-out;
-    z-index: 1;
+    z-index: 5;
 }
 
 .big-loading{
-    color: #ffffff;
+    color: #154025;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -124,7 +118,7 @@ body{
     position: fixed;
     z-index: 1;
     width: 100%;
-    background: white;
+    background: #ffe23e;
 }
 
 .site-name{
@@ -137,15 +131,21 @@ body{
     justify-content: space-around;
     align-items: center;
     width: 40%;
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
     text-transform: uppercase;
+    background: #ffe23e; 
 }
 
 .nav-links li{
     list-style-type: none;
+    transition: .1s border-bottom step-end;
 }
 .nav-links li a{
     text-decoration: none;
+}
+
+.nav-links li:hover{
+    border-bottom: 2px solid #78df4f;
 }
 
 .burger{
@@ -198,18 +198,33 @@ body{
     height: 100vh;
     width: 100vw;
     position: relative;
+    background: url("../res/img.jpg") no-repeat;
+    background-size: cover;
     background-color: #154025;
+    background-blend-mode: soft-light;
 }
+
+/* .intro-page::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+} */
 
 .a {
     fill: none;
-    stroke: #4fdf4f;
+    stroke: #39cf25;
     stroke-width: 5px;
 }
 
 #logo{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -262,10 +277,6 @@ body{
     list-style-type: square;
 }
 
-.add{
-    opacity: 1;
-}
-
 @keyframes text-enter01{
     from{
         transform: translateX(-250px);
@@ -294,7 +305,7 @@ body{
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    background: radial-gradient(#07ff45,#eaf216);
+    background: linear-gradient(45deg, #07ff45,#eaf216);
 }
 
 @keyframes full{

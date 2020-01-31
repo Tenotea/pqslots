@@ -19,14 +19,19 @@
 
 
 @media screen and (max-width:768px) {
+    .loading{
+        width: 20px;
+        height: 20px;
+    }
+
+
     .nav-links{
         position: absolute;
         right: 0;
         flex-direction: column;
-        height: 92vh;
+        height: 90vh;
         top: 8vh;
         width: 70%;
-        background: #ffffff;
         transform: translateX(100%);
         transition: .6s transform ease-in-out;
     }
@@ -34,10 +39,15 @@
     .nav-links li{
         opacity: 0;
         transform: translateX(50px);
+        border-bottom: 2px solid #78df4f;
+       padding: 3px 2px;
+
     }
 
     .burger{
         display: block;
+        cursor: pointer;
+        box-shadow: 4px, 3px, 1px, rgba(0, 0, 0, 0.5);
     }
 
 
@@ -56,9 +66,52 @@
         }
     }
 
-    
+    #logo{
+        top: 40%;
+        left: 50%;
+    }
+
+    .under-logo{
+        top: 60%;
+        left: 50%;
+        flex-direction: column;
+        height: 10%;
+        font-size: 20px;
+    }
 
 
+    .t1{
+       transform: translateX(0px);
+    }
 
+    .t2{
+        transform: translate(0px, 30px);
+    }
+
+    @keyframes text-enter01{
+        from{
+            transform: translateX(-150px);
+            opacity: 0;
+        } to{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes text-enter02{
+        from{
+            transform: translateY(40px);
+            opacity: 0;
+        } to{
+            transform: translateY(0px);;
+            opacity: 1;
+        }
+    }
+
+    .finish-line{
+        width: 85%;
+        height: 5px;
+        top: 70%;
+    }
 
 }

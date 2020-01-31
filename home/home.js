@@ -11,13 +11,32 @@ const finishLine = document.querySelector('.finish-line');
 //........THE PAGE LOADS HERE.........//
 let loadingEffect = () => {
     loadingPage.style.transform = "translateY(-100vh)";
+
     logoEffect.style.cssText = "animation: naming 5s ease-in-out 0s 1 alternate forwards;"
-     enterText.style.cssText = "animation: text-enter01 1s 1 ease-in-out 3.6s;";
-     enterText2.style.cssText= "animation: text-enter02 1s 1 ease-in-out 4.4s;";
+
+     enterText.style.cssText = "animation: text-enter01 1s 1 ease-in-out 3.6s forwards;";
+
+     enterText2.style.cssText= "animation: text-enter02 1s 1 ease-in-out 4.4s forwards;";
+
+     enterText2.addEventListener("webkitAnimationEnd", () => {
+        body.style.overflow = "unset";
+        finishLine.style.cssText = "animation: full 1s 1 ease 0s forwards;"});
+
     } 
 //setTimeout(loadingEffect, 5000);
 window.addEventListener('load', loadingEffect);
 
+
+///...........THE SVG PRECAUTION.........//
+let logoWidth = () => {
+    let screenSize = (window.innerWidth * 60)/100;
+    Math.ceil(screenSize);
+    logo.style.width = screenSize;
+    if(screenSize++ || screenSize--){
+        logo.style.width = screenSize;
+    }    
+}
+logoWidth();
 
 
 
@@ -41,11 +60,10 @@ const navSlide = () => {
             
         }
 
-});
- 
-    }
-
+    });
+}
 navSlide();
+
 
 //..............RESPONSIVE_HEADER_TO_USER_SCROLL.............//
 const header = document.querySelector('.navigation');
@@ -67,45 +85,3 @@ function checkScrollDirection(){
     }
     lastScrollPosition = newScrollPosition;  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//.........THE LANDING PAGE APPEARS...........//
-enterText.addEventListener("webkitAnimationEnd", () => enterText.className += " add");
-enterText2.addEventListener("webkitAnimationEnd", () => {
-    enterText2.className += " add";
-    body.style.overflow = "unset";
-    finishLine.style.cssText = "animation: full 1s 1 ease;"});
-
-finishLine.addEventListener("webkitAnimationEnd" , () => {
-    finishLine.style.cssText = "transform: translate(-50%, -50%) scale(1);";
-})
-
-
-///...........THE SVG PRECAUTION.........//
-let logoWidth = () => {
-    let screenSize = (window.innerWidth * 60)/100;
-    Math.ceil(screenSize);
-    logo.style.width = screenSize;
-    if(screenSize++ || screenSize--){
-        logo.style.width = screenSize;
-    }    
-}
-logoWidth();
-
-
-
-
-
