@@ -1,4 +1,3 @@
-const body = document.querySelector('body');
 const loadingPage = document.querySelector('.first-loading-page');
 const siteIntro = document.querySelector('.intro-page');
 const logo = document.querySelector('#logo');
@@ -6,6 +5,7 @@ const logoEffect = document.querySelector('#logo path');
 const enterText = document.querySelector('.t1');
 const enterText2 = document.querySelector('.t2');
 const finishLine = document.querySelector('.finish-line'); 
+
 
 
 //........THE PAGE LOADS HERE.........//
@@ -19,11 +19,11 @@ let loadingEffect = () => {
      enterText2.style.cssText= "animation: text-enter02 1s 1 ease-in-out 4.4s forwards;";
 
      enterText2.addEventListener("webkitAnimationEnd", () => {
-        body.style.overflow = "unset";
         finishLine.style.cssText = "animation: full 1s 1 ease 0s forwards;"});
        
         finishLine.addEventListener("webkitAnimationEnd", () => {
           header.style.cssText = "transform: translateY(0vh);";
+          document.body.style.overflow = "unset";
         });
     } 
 setTimeout(loadingEffect, 5000);
@@ -43,29 +43,32 @@ logoWidth();
 
 
 
-
-
 //............SIDE_NAVIGATION_GOES_HERE..............//
 const navSlide = () => {
     const menuIcon = document.querySelector('.burger');
-
+    
     menuIcon.addEventListener('click' , () =>{
         const menuList = document.querySelector('.nav-links');
         menuList.classList.toggle('nav-links-active');
-
+         
         const menuLinks = document.querySelectorAll('.nav-links li');
         for(i = 0; i < menuLinks.length; i++){
             if(menuLinks[i].style.animation){
                 menuLinks[i].style.animation = "";
             }  else {
                 menuLinks[i].style.animation = `linksUp .3s 1 ease-in-out ${(i/5)}s forwards`;
-            }
-            
+            }  
         }
 
+        const burgerStrokes = document.querySelectorAll('.burger div');
+        for (i = 0; i< burgerStrokes.length; i++){
+            burgerStrokes[i].classList.toggle(`line-${i+1}`);
+            burgerStrokes[i].style.transition = "0.5s all ease";
+        }
     });
 }
 navSlide();
+
 
 
 //..............RESPONSIVE_HEADER_TO_USER_SCROLL.............//

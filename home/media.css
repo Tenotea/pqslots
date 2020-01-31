@@ -19,11 +19,18 @@
 
 
 @media screen and (max-width:768px) {
+    .hidden{
+        overflow: hidden;
+    }
+
     .loading{
         width: 20px;
         height: 20px;
     }
 
+    .site-name{
+        font-size: 30px;
+    }
 
     .nav-links{
         position: absolute;
@@ -49,6 +56,17 @@
     .burger{
         display: block;
         cursor: pointer;
+       
+    }
+
+    .line-1{
+        transform: rotate(-45deg) translate(-6px, 4px);
+    }
+    .line-2{
+        opacity: 0;
+    }
+    .line-3{
+        transform: rotate(45deg) translate(-6px, -4px);
     }
 
 
