@@ -208,7 +208,6 @@
         -o-background-size: cover;
     background-size: cover;
     background-position: center center;
-    background-blend-mode: multiply;
 }
 
 /* .intro-page::after{
