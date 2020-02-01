@@ -201,7 +201,7 @@
     width: 100vw;
     position: relative;
     background-color: #2f3330;
-    background-image: url("../res/img.jpg");
+    background-image: url('../res/img.jpg');
     background-repeat: no-repeat;
     -webkit-background-size: cover;
         -moz-background-size: cover;
