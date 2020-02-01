@@ -5,24 +5,9 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* //................ ANDROID MOBILE VIEW ............// */
 
 @media screen and (max-width:768px) {
-    .hidden{
-        overflow: hidden;
-    }
-
     .loading{
         width: 20px;
         height: 20px;
@@ -51,7 +36,6 @@
         transform: translateX(50px);
         border-bottom: 2px solid #000000;
        padding: 3px 2px;
-
     }
 
     .burger{
@@ -69,8 +53,6 @@
         transform: rotate(45deg) translate(-6px, -4px);
     }
 
-
-
     /* //......THESE_ARE_CALLED_BY_JAVASCRIPT........// */
 
     .nav-links-active{
@@ -85,7 +67,6 @@
         }
     }
 
-
     .intro-page{
         background-image: url("../res/img-min.jpg");
         background-repeat: no-repeat;
@@ -98,14 +79,14 @@
     }
 
     .intro-page::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: #000000;;
-    opacity: 0.7;
-    filter: grayscale(100%);
-}
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #000000;;
+        opacity: 0.7;
+        filter: grayscale(100%);
+    }
 
 
 

@@ -1,5 +1,4 @@
 /* //.......MISCALLENEOUS.........// */
-
 *{
     margin: 0;
     padding: 0;
@@ -7,14 +6,13 @@
     color: inherit;
     outline: none;
 }
-
 ::-webkit-scrollbar{
     display: none;
 }
+
 .body{
     overflow: hidden;
 }
-
 
 /* //.............PAGE LOADER SYLING.............// */
 .first-loading-page{
@@ -27,16 +25,15 @@
 }
 
 .big-loading{
-    color: #ffffff;
+    color: #000000;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: cursive;
-    font-size: 60px;
-    opacity: 0.6;
-    z-index: 1;
-    
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 50px;
+    opacity: 0.5;
+    z-index: 1;   
 }
 
 .loading-boxes{
@@ -44,12 +41,15 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     width: 200px;
     justify-content: space-evenly;
     align-items: center;
     z-index: 1;
-    filter: drop-shadow(9px 9px 10px rgba(0,0,0,0.9)) brightness(1);
+    filter: drop-shadow(9px 9px 10px #000000e6) brightness(1);
 }
 
 .loading{
@@ -59,34 +59,24 @@
     border-radius: 50%;
 }
 
-.box-1{
+.box-1, .box-2, .box-3{
     animation-name: loading;
     animation-duration: .6s;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
-    animation-delay: 0s;
     animation-iteration-count: infinite;
+}
 
+.box-1{
+    animation-delay: 0s;
 }
 
 .box-2{
-    animation-name: loading;
-    animation-duration: .6s;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate;
     animation-delay: .2s;
-    animation-iteration-count: infinite;
-
 }
 
 .box-3{
-    animation-name: loading;
-    animation-duration: .6s;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate;
     animation-delay: .4s;
-    animation-iteration-count: infinite;
-
 }
 
 @keyframes loading{
@@ -100,16 +90,11 @@
     }
 }
 
-
-
-
-
-
-
-
-
 /* //...........NAVIGATION STYLING.............// */
 .navigation{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -129,6 +114,9 @@
 }
 
 .nav-links{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -161,51 +149,17 @@
     background-color: black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* //.............LANDING PAGE STYLING.........// */
 .intro-page{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
     background-color: #2f3330;
     background-image: url('../res/img.jpg');
     background-repeat: no-repeat;
     -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-position: center center;
     background-blend-mode: multiply;
@@ -242,15 +196,18 @@
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     flex-direction: row;
+    -ms-flex-direction: row;
     width: fit-content;
+    color: #08ff67;
     justify-content: space-evenly;
     align-items: flex-start;
     font-size: 30px;
-    font-family: 'Luckiest Guy', cursive;
-    
+    font-family: 'Luckiest Guy', cursive;    
 }
 
 .t1{
@@ -293,7 +250,7 @@
 }
 
 .finish-line{
-    width: 50%;
+    width: 70%;
     height: 10px;
     border-radius: 50%;
     position: absolute;
