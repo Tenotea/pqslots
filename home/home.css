@@ -202,10 +202,6 @@
     position: relative;
     background-color: #2f3330;
     background-image: url("../res/img-min.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
     /* background-blend-mode: soft-light; */
     background-blend-mode: multiply;
 }
