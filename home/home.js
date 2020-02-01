@@ -26,8 +26,8 @@ let loadingEffect = () => {
           document.body.style.overflow = "unset";
         });
     } 
-setTimeout(loadingEffect, 5000);
-//window.addEventListener('load', loadingEffect);
+//setTimeout(loadingEffect, 5000);
+window.addEventListener('load', loadingEffect);
 
 
 ///...........THE SVG PRECAUTION.........//

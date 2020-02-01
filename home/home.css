@@ -200,7 +200,7 @@
     height: 100vh;
     width: 100vw;
     position: relative;
-    background: url("../res/img.jpg") no-repeat;
+    background: url("../res/img-min.jpg") no-repeat;
     background-size: cover;
     background-color: #2f3330;
     /* background-blend-mode: soft-light; */
