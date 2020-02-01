@@ -200,8 +200,8 @@
     height: 100vh;
     width: 100vw;
     position: relative;
-    background: url("../res/img-min.jpg") no-repeat;
-    background-size: cover;
+    background: url("../res/img-min.jpg");
+    background-repeat: no-repeat;
     background-color: #2f3330;
     /* background-blend-mode: soft-light; */
     background-blend-mode: multiply;

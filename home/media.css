@@ -35,6 +35,7 @@
     .nav-links{
         position: absolute;
         right: 0;
+        -ms-flex-direction: column;
         flex-direction: column;
         justify-content: space-evenly;
         height: 90vh;
