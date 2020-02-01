@@ -203,8 +203,11 @@
     background-color: #2f3330;
     background-image: url("../res/img.jpg");
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-blend-mode: multiply;
 }
 
