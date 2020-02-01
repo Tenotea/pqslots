@@ -85,6 +85,15 @@
         }
     }
 
+
+    .intro-page{
+        background-image: url("../res/img-min.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
+    }
+
     #logo{
         top: 40%;
         left: 50%;

@@ -201,8 +201,10 @@
     width: 100vw;
     position: relative;
     background-color: #2f3330;
-    background-image: url("../res/img-min.jpg");
-    /* background-blend-mode: soft-light; */
+    background-image: url("../res/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-blend-mode: multiply;
 }
 
